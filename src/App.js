@@ -3,8 +3,10 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import Favourites from "./Components/Favourites";
 import NotFound from "./Components/NotFound";
+import RecipeItem from "./Components/RecipeItem";
 import Footer from "./Components/Footer";
 import { useRef, useState } from "react";
+
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -19,6 +21,7 @@ const App = () => {
 
     setSearchQuery("");
     inputField.current.blur();
+    setRecipes([]);
   };
 
   const getData = async (searchQuery) => {
@@ -52,6 +55,7 @@ const App = () => {
             element={<Home recipes={recipes} loading={loading} error={error} />}
           />
           <Route path="/Favourites" element={<Favourites />} />
+          <Route path="/recipe-item/:id" element={<RecipeItem />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
