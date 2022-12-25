@@ -8,12 +8,13 @@ export const useFetch = (id) => {
     const getRecipeItemData = async () => {
       try {
         const res = await fetch(
-          `https://forkify-api.herokuapp.com/api/get?rId=${id}`
+          `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
         );
         if (!res.ok)
           throw new Error("something went wrong ,please try again later!");
         const data = await res.json();
-        setData(data);
+        setData(data?.data?.recipe);
+        console.log(data);
         setLoading(false);
       } catch (err) {
         setError(err.message);
