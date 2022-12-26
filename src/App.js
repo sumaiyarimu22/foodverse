@@ -29,6 +29,7 @@ const App = () => {
     setSearchQuery("");
     inputField.current.blur();
     setRecipes([]);
+    setError("");
     navigate("/");
   };
 
