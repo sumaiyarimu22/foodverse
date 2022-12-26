@@ -14,7 +14,6 @@ export const useFetch = (id) => {
           throw new Error("something went wrong ,please try again later!");
         const data = await res.json();
         setData(data?.data?.recipe);
-        console.log(data);
         setLoading(false);
       } catch (err) {
         setError(err.message);
