@@ -1,17 +1,19 @@
-What is Foodverse?
-Foodverse is a recipe web application, where an user can search different kinds of recipe and find the necessary ingredients for the specific recipe item. Also a recipe item can be saved into the local storage of the browser. It's easy to find different recipes for both vegetarians and meat eaters, as well as for people who want to lose weight.
+Foodverse
+Project Description
+Foodverse is a recipe web application where users can search for different kinds of recipes and find the necessary ingredients for each recipe item. The application also allows users to save their favorite recipes in the local storage of their browser, making it easy to access their preferred recipes whenever they want to cook. Whether you're a vegetarian or a meat-eater, or if you're looking for healthy recipes to help you lose weight, Foodverse has something for everyone.
 
-Your one stop for recipes, Foodverse is the best app for any kind of cuisine and cooking level. Browse what's trending, plan your meals with our grocery list tool and browse recipes by ingredients. There’s nothing like a well-made meal to make you feel like a culinary genius!
-
-Features:
-Users can search different kinds of recipe and get the ingredients for these
-Users can save specific recipes as the favorites
-Favorite recipes also stored into the local storage of the client’s browser
-View the app (Hosted on Netlify):
-https://food-verse.netlify.app
-
-Tools:
-React.js, React Router, Tailwind CSS
+Project Features
+Search for recipes
+View recipe details
+Save recipes to local storage
+Browse recipes for vegetarians and meat-eaters
+Find recipes for healthy eating
+Tools Used
+React.js
+React Router
+Tailwind CSS
+Installation
+To run the project locally, follow these steps:
 
 How to use this repo?
 Download or clone this repo and run the following command in the terminal:
@@ -21,3 +23,5 @@ or
 npm i
 Conclusion:
 A recipe web application that is not just based on a list of recipes with ingredients, but also a database that's been created by food lovers, for food lovers. Search through thousands of the best recipes worldwide and find whatever you're looking for, without sacrificing your daily routine. Give it a go!
+
+Thanks for visiting this repo, take care!
